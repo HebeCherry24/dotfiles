@@ -149,6 +149,8 @@ local keys = {
 
   { key = "c", mods = "SUPER", action = act.CopyTo("Clipboard") },
   { key = "v", mods = "SUPER", action = act.PasteFrom("Clipboard") },
+  { key = "a", mods = "SUPER", action = wezterm.action.SendString("\x01") }, -- 行頭へ移動
+  { key = "e", mods = "SUPER", action = wezterm.action.SendString("\x05") }, -- 行末へ移動
   { key = "m", mods = "SUPER", action = act.Hide },
 
   -- Debug
